@@ -20,9 +20,9 @@ layui.use(['layer','form','table'], function() {
         width: $(parent.window).width()-223,
         cols: [[
             {type:'checkbox'},
-            {field:'loginName', title: '登录名称', width:'10%'},
-            {field:'nickName',  title: '昵称',    width:'10%'},
-            {field:'email',     title: '邮箱',    width:'16%' },
+            {field:'loginName', title: '车牌号', width:'10%'},
+            {field:'nickName',  title: '昵称(车型)',    width:'10%'},
+            {field:'email',     title: '邮箱(车主姓名)',    width:'16%' },
             {field:'tel',       title: '电话',    width:'12%'},
             {field:'adminUser', title: '用户类型', width:'8%',templet:'#userType'},
             {field:'locked',    title: '状态',width:'8%',templet:'#userStatus'},
