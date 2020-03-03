@@ -16,13 +16,13 @@
     <div class="user_left">
         <input class="layui-hide" name="id" th:value="${userinfo.id}" />
         <div class="layui-form-item">
-            <label class="layui-form-label">用户名</label>
+            <label class="layui-form-label">车牌号</label>
             <div class="layui-input-block">
                 <input type="text" th:value="${userinfo.loginName}" name="loginName" disabled class="layui-input layui-disabled">
             </div>
         </div>
         <div class="layui-form-item">
-            <label class="layui-form-label">昵称</label>
+            <label class="layui-form-label">车型</label>
             <div class="layui-input-block">
                 <input type="text" th:value="${userinfo.nickName}" name="nickName" class="layui-input">
             </div>
@@ -40,20 +40,20 @@
         </div>
     </div>
     <div class="layui-form-item">
-        <label class="layui-form-label">邮箱</label>
+        <label class="layui-form-label">车主姓名</label>
         <div class="layui-input-block">
             <input type="text" th:value="${userinfo.email}" name="email" placeholder="请输入邮箱"  class="layui-input userEmail">
         </div>
     </div>
     <div class="layui-form-item">
-        <label class="layui-form-label">自我介绍</label>
+        <label class="layui-form-label">车主介绍</label>
         <div class="layui-input-block">
             <textarea placeholder="请输入内容" class="layui-textarea myself" name="remarks" th:value="${userinfo.remarks}"></textarea>
         </div>
     </div>
     </div>
     <div class="layui-form-item">
-        <label class="layui-form-label">头像</label>
+        <label class="layui-form-label">车主头像</label>
         <input type="hidden" name="icon" th:value="${userinfo.icon}" >
         <img width="100px" height="100px" th:src="(${#strings.isEmpty(userinfo.icon)}) ? ${session.icon} : ${userinfo.icon}" class="layui-circle" th:id="userFace">
         <button type="button" class="layui-btn layui-btn-normal" id="updateFace"><i class="layui-icon"></i>上传头像</button>
