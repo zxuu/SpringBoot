@@ -1,10 +1,6 @@
 package com.lzhpo.admin.entity;
 
-import com.baomidou.mybatisplus.annotation.TableName;
-import com.lzhpo.common.base.DataEntity;
-
-@TableName("track")
-public class Track extends DataEntity<Track> {
+public class Track {
     private String loc_time;
     private String entity_name;
     private String latitude;
