@@ -12,8 +12,9 @@ public class TrackController {
     @Autowired
     private TrackMapper trackMapper;
 
-    @RequestMapping(value = "/addTrack",method = RequestMethod.GET)
-    public void addUser(Track track){
+    @RequestMapping(value = "/admin/login/addTrack",method = RequestMethod.POST)
+    public String addUser(Track track){
         trackMapper.addTrack(track);
+        return "admin/login/addTrack";
     }
 }
