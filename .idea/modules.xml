@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/lzhpo-shiro.iml" filepath="$PROJECT_DIR$/lzhpo-shiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SPPanAdmin.iml" filepath="$PROJECT_DIR$/SPPanAdmin.iml" />
     </modules>
   </component>
 </project>
