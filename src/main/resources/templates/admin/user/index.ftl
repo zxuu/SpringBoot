@@ -116,7 +116,7 @@
 			        field: "id",
 			        sortable: true
 			    },{
-			        title: "用户名",
+			        title: "车牌号",
 			        field: "userName"
 			    },{
 			        title: "所属角色",
@@ -129,7 +129,7 @@
                     	return r;
                     }
 			    },{
-			        title: "昵称",
+			        title: "车型",
 			        field: "nickName"
 			    },{
 			        title: "性别",
@@ -146,7 +146,7 @@
 			        title: "电话",
 			        field: "telephone"
 			    },{
-			        title: "邮箱",
+			        title: "姓名",
 			        field: "email"
 			    },{
 			        title: "状态",

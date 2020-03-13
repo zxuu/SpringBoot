@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
-	welcome to
-</body>
-</html>
+<div class="main-container" id="main" >
+	<iframe src="http://lbsyun.baidu.com/trace/admin/manager?service_id=219424" width="100%" height="100%" frameborder="0">
+
+	</iframe>
+</div>

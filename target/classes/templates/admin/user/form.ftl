@@ -43,13 +43,13 @@
                         <form class="form-horizontal m-t" id="frm" method="post" action="${ctx!}/admin/user/edit">
                         	<input type="hidden" id="id" name="id" value="${user.id}">
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">账户名：</label>
+                                <label class="col-sm-3 control-label">车牌号：</label>
                                 <div class="col-sm-8">
                                     <input id="userName" name="userName" class="form-control" type="text" value="${user.userName}" <#if user?exists> readonly="readonly"</#if> >
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">昵称：</label>
+                                <label class="col-sm-3 control-label">车型：</label>
                                 <div class="col-sm-8">
                                     <input id="nickName" name="nickName" class="form-control" type="text" value="${user.nickName}">
                                 </div>
@@ -76,13 +76,13 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">E-mail：</label>
+                                <label class="col-sm-3 control-label">姓名：</label>
                                 <div class="col-sm-8">
                                     <input id="email" name="email" class="form-control" value="${user.email}">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">地址：</label>
+                                <label class="col-sm-3 control-label">车主地址：</label>
                                 <div class="col-sm-8">
                                     <input id="address" name="address" class="form-control" value="${user.address}">
                                 </div>
@@ -140,13 +140,9 @@
     	    rules: {
     	    	userName: {
     	        required: true,
-    	        minlength: 4,
-    	    	maxlength: 10
     	      },
     	      	nickName: {
     	        required: true,
-    	        minlength: 4,
-    	    	maxlength: 10
     	      },
     	      	sex: {
     	        required: true
@@ -159,7 +155,7 @@
     	        required: true
     	      },
     	      	email: {
-    	      	email:true,
+
     	        required: true
     	      },
     	      	address: {
@@ -170,7 +166,7 @@
     	        required: true
     	      },
     	      	description: {
-    	        required: true,
+
     	        maxlength: 40
     	      }
     	    },
