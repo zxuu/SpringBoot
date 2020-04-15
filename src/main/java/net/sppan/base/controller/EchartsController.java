@@ -1,16 +1,15 @@
 package net.sppan.base.controller;
 
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
-import net.sppan.base.entity.Index;
 import net.sppan.base.service.IndexService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
+
+import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
 @Controller
 @RequestMapping(value = "/")
@@ -21,9 +20,9 @@ public class EchartsController{
     @RequestMapping(value = "datasee", method = RequestMethod.GET)
     public String index() {
         System.out.println("index----------------------");
-        return "index2";
+        return "index";
     }
-    @RequestMapping(value = "list", method = RequestMethod.GET)
+    @RequestMapping(value = "list", method = POST,consumes = MediaType.ALL_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     @ResponseBody
     public Map<String,Object> getList() {
         Map<String,Object> map = new HashMap<>();
@@ -35,11 +34,10 @@ public class EchartsController{
     }
 
     @RequestMapping(value = "haha", method = RequestMethod.GET)
-    @ResponseBody
-    public List<Index> haha() {
-        String s = JSON.toJSONString(indexService.findAll());
-        System.out.println(s);
-        return indexService.findAll();
+    public String haha() {
+//        String s = JSON.toJSONString(indexService.findAll());
+//        System.out.println(s);
+        return "admin/CarStream";
     }
 
 }

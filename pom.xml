@@ -7,10 +7,10 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<repositories>
-		<repository>
-			<id>nexus-aliyun</id>
-			<url>http://maven.aliyun.com/nexus/content/groups/public</url>
-		</repository>
+<!--		<repository>-->
+<!--			<id>nexus-aliyun</id>-->
+<!--			<url>http://maven.aliyun.com/nexus/content/groups/public</url>-->
+<!--		</repository>-->
 	</repositories>
 
 	<!-- Inherit defaults from Spring Boot -->
