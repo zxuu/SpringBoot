@@ -37,7 +37,7 @@ public class EchartsController{
     public String haha() {
 //        String s = JSON.toJSONString(indexService.findAll());
 //        System.out.println(s);
-        return "admin/CarStream";
+        return "CarLines/carLines";
     }
 
 }
