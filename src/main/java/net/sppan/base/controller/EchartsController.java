@@ -20,7 +20,7 @@ public class EchartsController{
     @RequestMapping(value = "datasee", method = RequestMethod.GET)
     public String index() {
         System.out.println("index----------------------");
-        return "index";
+        return "admin/CarStream";
     }
     @RequestMapping(value = "list", method = POST,consumes = MediaType.ALL_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     @ResponseBody
