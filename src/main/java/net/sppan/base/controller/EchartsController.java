@@ -24,10 +24,10 @@ public class EchartsController{
     @Autowired
     private CarService carService;
 
-    @RequestMapping(value = "datasee", method = RequestMethod.GET)
+    @RequestMapping(value = "carsee", method = RequestMethod.GET)
     public String index() {
         System.out.println("index----------------------");
-        return "admin/CarStream";
+        return "CarLines/carLines";
     }
     @RequestMapping(value = "list", method = POST,consumes = MediaType.ALL_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     @ResponseBody
@@ -40,11 +40,17 @@ public class EchartsController{
         return map;
     }
 
-    @RequestMapping(value = "haha", method = RequestMethod.GET)
+    @RequestMapping(value = "haha", method = GET,consumes = MediaType.ALL_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public String haha() {
 //        String s = JSON.toJSONString(indexService.findAll());
 //        System.out.println(s);
-        return "CarLines/carLines";
+        return "admin/lines-bus";
+    }
+    @RequestMapping(value = "carstream", method = RequestMethod.GET)
+    public String carstream() {
+//        String s = JSON.toJSONString(indexService.findAll());
+//        System.out.println(s);
+        return "admin/CarStream";
     }
 
     //统计各种车辆的数目

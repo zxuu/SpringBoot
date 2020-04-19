@@ -1,9 +1,11 @@
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\config\shiro\freemarker\HasRoleTag.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\config\intercepter\CommonIntercepter.java
+D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\dao\CarMapper.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\config\shiro\freemarker\GuestTag.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\service\support\IBaseService.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\config\shiro\ShiroManager.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\service\IRoleService.java
+D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\Constant.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\config\shiro\freemarker\UserTag.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\service\IndexService.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\vo\ZtreeView.java
@@ -11,6 +13,7 @@ D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\entity\Index.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\entity\User.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\entity\support\BaseEntity.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\config\shiro\freemarker\SecureTag.java
+D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\entity\Car.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\config\shiro\freemarker\HasAnyRolesTag.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\service\impl\IndexServiceImpl.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\controller\admin\LoginController.java
@@ -26,6 +29,7 @@ D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\service\impl\UserSe
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\controller\web\IndexController.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\controller\admin\system\ResourceController.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\Application.java
+D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\service\CarService.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\config\CacheConfig.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\service\IUserService.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\service\impl\ResourceServiceImpl.java
@@ -34,6 +38,7 @@ D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\config\shiro\freema
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\config\shiro\freemarker\PrincipalTag.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\service\impl\RoleServiceImpl.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\config\shiro\ShiroConfig.java
+D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\entity\help\CarCateNum.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\controller\admin\AdminIndexController.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\config\shiro\freemarker\AuthenticatedTag.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\entity\Resource.java
@@ -42,6 +47,7 @@ D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\config\shiro\freema
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\controller\EchartsController.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\common\JsonResult.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\entity\Track.java
+D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\service\impl\CarServiceImpl.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\controller\admin\system\RoleController.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\dao\IUserDao.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\controller\BaseController.java

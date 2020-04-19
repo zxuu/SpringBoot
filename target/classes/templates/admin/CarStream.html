@@ -19,7 +19,7 @@
     option = null;
     app.title = '北京公交路线 - 线特效';
 
-    $.getJSON('https://raw.githubusercontent.com/ecomfe/echarts/master/test/data/lines-bus.json', function(data) {
+    $.getJSON('https://www.echartsjs.com/examples/data/asset/data/lines-bus.json', function(data) {
         var hStep = 300 / (data.length - 1);
         var busLines = [].concat.apply([], data.map(function (busLine, idx) {
             var prevPt;
