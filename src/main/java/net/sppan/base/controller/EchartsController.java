@@ -46,11 +46,15 @@ public class EchartsController{
 //        System.out.println(s);
         return "admin/lines-bus";
     }
-    @RequestMapping(value = "carstream", method = RequestMethod.GET)
-    public String carstream() {
-//        String s = JSON.toJSONString(indexService.findAll());
-//        System.out.println(s);
-        return "admin/CarStream";
+    @RequestMapping(value = "carsNumSee", method = RequestMethod.GET)
+    @ResponseBody
+    public Map<String,Object> carsNumSee() {
+        Map<String,Object> map = new HashMap<>();
+        map.put("status", 0);
+        map.put("hitSugarSelf", true);
+        map.put("msg", "ok成功");
+        map.put("data", carService.carCateNum().size());
+        return map;
     }
 
     //统计各种车辆的数目
