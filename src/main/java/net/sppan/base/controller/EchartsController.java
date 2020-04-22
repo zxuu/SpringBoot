@@ -27,7 +27,7 @@ public class EchartsController{
     @RequestMapping(value = "carsee", method = RequestMethod.GET)
     public String index() {
         System.out.println("index----------------------");
-        return "CarLines/carLines";
+        return "admin/lines-bmap-effect";
     }
     @RequestMapping(value = "list", method = POST,consumes = MediaType.ALL_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     @ResponseBody
