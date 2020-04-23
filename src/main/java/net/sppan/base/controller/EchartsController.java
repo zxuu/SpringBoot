@@ -11,7 +11,10 @@ import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import javax.websocket.Session;
+import javax.websocket.server.ServerEndpoint;
 import java.util.*;
+import java.util.concurrent.CopyOnWriteArraySet;
 
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
@@ -27,7 +30,7 @@ public class EchartsController{
     @RequestMapping(value = "carsee", method = RequestMethod.GET)
     public String index() {
         System.out.println("index----------------------");
-        return "admin/lines-bmap-effect";
+        return "CarLines/client";
     }
     @RequestMapping(value = "list", method = POST,consumes = MediaType.ALL_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     @ResponseBody
@@ -42,9 +45,11 @@ public class EchartsController{
 
     @RequestMapping(value = "haha", method = GET,consumes = MediaType.ALL_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public String haha() {
-//        String s = JSON.toJSONString(indexService.findAll());
-//        System.out.println(s);
         return "admin/lines-bus";
+    }
+    @RequestMapping(value = "hahaha", method = GET,consumes = MediaType.ALL_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public String hahaha() {
+        return "CarLines/lines-bus";
     }
     @RequestMapping(value = "carsNumSee", method = RequestMethod.GET)
     @ResponseBody
