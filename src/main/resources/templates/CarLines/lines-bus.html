@@ -42,7 +42,8 @@
     }
 
     webSocket.onmessage=function (event) {
-        setMessageInnerHTML(event.data);
+        alert(event.data);
+        // setMessageInnerHTML(event.data);
     }
 
     webSocket.onclose=function () {
@@ -58,7 +59,7 @@
     }
 
     function send() {
-        // var message=document.getElementById('text').value;
+        var message="前端发给后台";
         webSocket.send(message);
     }
 
@@ -72,9 +73,7 @@
         "coords": [
             [121.448029, 31.198981],
             [121.448319, 31.19844],
-            [121.448319, 31.19844],
             [121.448416, 31.198212],
-            [121.448469, 31.19809],
             [121.448469, 31.19809],
             [121.448578, 31.19768]
         ],
@@ -242,7 +241,7 @@
                 }
             },
             effect: {
-                constantSpeed: 20,
+                constantSpeed: 9,
                 show: true,
                 trailLength: 0.1,
                 symbolSize: 1.5
