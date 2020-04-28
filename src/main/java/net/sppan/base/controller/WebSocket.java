@@ -1,10 +1,13 @@
 package net.sppan.base.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.websocket.OnClose;
 import javax.websocket.OnMessage;
 import javax.websocket.OnOpen;
@@ -23,6 +26,15 @@ public class WebSocket {
     @ResponseBody
     public void haha(){
         send("yes");
+    }
+    @RequestMapping(value = "/py",method = RequestMethod.POST)
+    @ResponseBody
+    public String py(HttpServletRequest request, HttpServletResponse response){
+        String urineId = request.getParameter("key1");
+        String time = request.getParameter("key2");
+        System.out.println(urineId + time + "haha");
+        send(urineId+","+time);
+        return "good";
     }
 
     @OnOpen
