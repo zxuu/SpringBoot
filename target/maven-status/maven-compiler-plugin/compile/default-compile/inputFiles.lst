@@ -16,6 +16,7 @@ D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\config\shiro\freema
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\entity\Car.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\config\shiro\freemarker\HasAnyRolesTag.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\service\impl\IndexServiceImpl.java
+D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\controller\WebSocket.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\controller\admin\LoginController.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\controller\admin\system\UserController.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\service\support\impl\BaseServiceImpl.java
@@ -58,6 +59,7 @@ D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\config\shiro\freema
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\dao\IRoleDao.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\common\utils\AESUtils.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\dao\IndexMapper.java
+D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\config\WebSocketConfig.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\dao\IResourceDao.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\dao\TrackMapper.java
 D:\Project\SpingBoot\SPPanAdmin\src\main\java\net\sppan\base\config\shiro\freemarker\HasPermissionTag.java
