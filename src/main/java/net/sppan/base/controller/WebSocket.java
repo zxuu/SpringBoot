@@ -38,18 +38,18 @@ public class WebSocket {
         String lon1 = request.getParameter("lon1");
         String lat2 = request.getParameter("lat2");
         String lon2 = request.getParameter("lon2");
-        List<float[]> f = new ArrayList<>();
-        float[] f1 = new float[2];
-        float[] f2 = new float[2];
-        f1[0]=Float.valueOf(lon1);
-        f1[1]=Float.valueOf(lat1);
-
-        f2[0]=Float.valueOf(lon2);
-        f2[1]=Float.valueOf(lat2);
-        f.add(f1);
-        f.add(f2);
-        System.out.println(listToString(f));
-        send(Arrays.toString(f.toArray()));
+//        List<float[]> f = new ArrayList<>();
+//        float[] f1 = new float[2];
+//        float[] f2 = new float[2];
+//        f1[0]=Float.valueOf(lon1);
+//        f1[1]=Float.valueOf(lat1);
+//
+//        f2[0]=Float.valueOf(lon2);
+//        f2[1]=Float.valueOf(lat2);
+//        f.add(f1);
+//        f.add(f2);
+        System.out.println(lon1+","+lat1+","+lon2+","+lat2);
+        send(lon1+","+lat1+","+lon2+","+lat2);
         return "gpsPostsuccess";
     }
 
@@ -59,7 +59,7 @@ public class WebSocket {
     public String carID(HttpServletRequest request, HttpServletResponse response){
         String carID = request.getParameter("ID");
         System.out.println(carID+":ID");
-        send(carID+":ID");
+//        send(carID+":ID");
         return "carIDsuccess";
     }
 
@@ -89,34 +89,12 @@ public class WebSocket {
         for (WebSocket webSocket:webSockets){
             try {
                 webSocket.session.getBasicRemote().sendText(message);
+//                webSocket.session.getBasicRemote().sendObject(message);
             }catch (Exception e){
                 e.printStackTrace();
             }
         }
     }
 
-    private static final String SEP1 = ",";
-    public static String ListToString(List<?> list) {
-        StringBuffer sb = new StringBuffer();
-        if (list != null && list.size() > 0) {
-            for (int i = 0; i < list.size(); i++) {
-                if (list.get(i) == null || list.get(i) == "") {
-                                         continue;
-                                     }
-                                 // 如果值是list类型则调用自己
-                                 if (list.get(i) instanceof List) {
-                                         sb.append(ListToString((List<?>) list.get(i)));
-                                         sb.append(SEP1);
-                                     } else if (list.get(i) instanceof Map) {
-                                         sb.append(MapToString((Map<?, ?>) list.get(i)));
-                                         sb.append(SEP1);
-                                     } else {
-                                         sb.append(list.get(i));
-                                         sb.append(SEP1);
-                                     }
-                             }
-                     }
-                 return "L" + sb.toString();
-             }
 
 }
