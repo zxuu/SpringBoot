@@ -70,32 +70,12 @@
     // [121.448029, 31.198981],
     //     [121.448319, 31.19844]
     // ]
-    var data = [
-        [121.448029, 31.198981],
-            [121.448319, 31.19844]
-    ]
-    setMap(data)
-    webSocket.onmessage=function (event) {
-        var r = event.data
-        alert(r)
+    // var data = [
+    //     [121.448029, 31.198981],
+    //         [121.448319, 31.19844]
+    // ]
 
-        var strs = r.split(",")
-        var d1 = [parseFloat(strs[0]),parseFloat(strs[1])]
-        var d2 = [parseFloat(strs[2]),parseFloat(strs[3])]
-        var d = [d1,d2]
-        setMap(d)
-    }
-
-    function setMap(data){
-        busLines = [{
-            "coords": data,
-            "lineStyle": {
-                "normal": {
-                    "color": "rgba(128, 0, 128, 1)"
-                }
-            }
-        }]
-        myChart.setOption(option = {
+    myChart.setOption(option = {
             bmap: {
                 center: [121.494687,31.23937],
                 zoom: 10,
@@ -229,7 +209,7 @@
                 type: 'lines',
                 coordinateSystem: 'bmap',
                 polyline: true,
-                data: busLines,
+                data: [],
                 silent: true,
                 lineStyle: {
                     normal: {
@@ -245,14 +225,14 @@
                 type: 'lines',
                 coordinateSystem: 'bmap',
                 polyline: true,
-                data: busLines,
+                data: [],
                 lineStyle: {
                     normal: {
                         width: 0
                     }
                 },
                 effect: {
-                    constantSpeed: 9,
+                    constantSpeed: 0,
                     show: true,
                     trailLength: 0.1,
                     symbolSize: 1.5
@@ -260,8 +240,34 @@
                 zlevel: 1
             }]
         });
-    }
 
+    webSocket.onmessage=function (event) {
+        var r = event.data
+        // alert(r)
+
+        var strs = r.split(",")
+        var d1 = [parseFloat(strs[0]),parseFloat(strs[1])]
+        var d2 = [parseFloat(strs[2]),parseFloat(strs[3])]
+        var d = [d1,d2]
+        busLines = [{
+            "coords": d,
+            "lineStyle": {
+                "normal": {
+                    "color": "rgba(128, 0, 128, 1)"
+                }
+            }
+        }]
+
+            myChart.setOption(option = {
+                series: [{
+                    data: busLines
+                }, {
+                    data: busLines
+                }]
+            });
+
+
+    }
     if (option && typeof option === "object") {
         myChart.setOption(option, true);
     }
