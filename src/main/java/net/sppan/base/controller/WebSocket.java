@@ -48,7 +48,7 @@ public class WebSocket {
 //        f2[1]=Float.valueOf(lat2);
 //        f.add(f1);
 //        f.add(f2);
-        System.out.println(lon1+","+lat1+","+lon2+","+lat2);
+        System.out.println("lon:"+lon1+", lat:"+lat1);
         send(lon1+","+lat1+","+lon2+","+lat2);
         return "gpsPostsuccess";
     }

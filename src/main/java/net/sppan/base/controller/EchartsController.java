@@ -1,6 +1,5 @@
 package net.sppan.base.controller;
 
-import com.alibaba.fastjson.JSON;
 import net.sppan.base.Constant;
 import net.sppan.base.entity.Car;
 import net.sppan.base.entity.help.CarCateNum;
@@ -11,10 +10,7 @@ import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import javax.websocket.Session;
-import javax.websocket.server.ServerEndpoint;
 import java.util.*;
-import java.util.concurrent.CopyOnWriteArraySet;
 
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
